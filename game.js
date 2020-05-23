@@ -20,6 +20,7 @@ $(document).keypress(function(){
 function nextSequence() {
 
     $("h1").text("Level "+level);
+    $("h1").animate({size:"25%"}).animate({size:none});
     level++;
    
     var randomNumber = Math.floor(Math.random() * 4);

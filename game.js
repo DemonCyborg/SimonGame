@@ -5,7 +5,7 @@ var level = 0;
 var index  = 0;
 var started = false;
 
-$(".start").click(function(){
+$(".start").touchstart(function(){
     nextSequence();
     started = true;
 });

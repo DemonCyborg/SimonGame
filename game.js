@@ -5,6 +5,11 @@ var level = 0;
 var index  = 0;
 var started = false;
 
+$(".start").click(function(){
+    nextSequence();
+    started = true;
+});
+
 $(document).keypress(function(){
     if(!started){
         nextSequence();
